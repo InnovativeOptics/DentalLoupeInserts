@@ -8,14 +8,24 @@
 #' @import shinyjs
 #' @noRd
 
+options(
+  gargle_oauth_email = TRUE,
+  gargle_oauth_cache = ".secrets"
+)
 
-our_data <- readxl::read_excel("data/Dental_data.xlsx",
-                               sheet = "Lens_details") %>%
-  mutate(VLT = scales::percent(as.numeric(VLT)),
-         `Price(from)` = scales::dollar(as.numeric(`Price(from)`)))
+googledrive::drive_auth(cache = ".secrets", email = "innovativeopticsdatabase@gmail.com")
+googlesheets4::gs4_auth(cache = ".secrets", email = "innovativeopticsdatabase@gmail.com")
 
-oem_data <- readxl::read_excel("data/Dental_data.xlsx",
-                               sheet = 1)
+
+sheet_id <- googledrive::drive_get("Dental_data")$id
+
+our_data <- googlesheets4::read_sheet(sheet_id, sheet = "Lens_details") %>%
+  mutate
+
+oem_data <- googlesheets4::read_sheet(sheet_id, sheet = "laser_info")
+
+#oem_data <- readxl::read_excel("data/Dental_data.xlsx",
+#                               sheet = 1)
 
 
 
