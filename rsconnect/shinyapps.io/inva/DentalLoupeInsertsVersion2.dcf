@@ -1,0 +1,13 @@
+name: DentalLoupeInsertsVersion2
+title: DentalLoupeInsertsVersion2
+username: inva
+account: inva
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12444224
+bundleId: 8978748
+url: https://inva.shinyapps.io/DentalLoupeInsertsVersion2/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data/Dental_data2.xlsx|data/Dental_data3.xlsx
