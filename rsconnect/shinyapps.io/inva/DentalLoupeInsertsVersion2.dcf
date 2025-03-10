@@ -5,7 +5,7 @@ account: inva
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 12444224
-bundleId: 9709494
+bundleId: 9916676
 url: https://inva.shinyapps.io/DentalLoupeInsertsVersion2/
 version: 1
 asMultiple: FALSE
