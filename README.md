@@ -1,3 +1,3 @@
 # DentalLoupeInserts
 
-Deployed at https://invo.shinyapps.io/DentalLoupeInserts/
+A search tool for finding loupe compatible laser eye protection.
